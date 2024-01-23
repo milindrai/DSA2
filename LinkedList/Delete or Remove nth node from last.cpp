@@ -6,7 +6,6 @@ public:
            ListNode*fast=ans;
            ListNode*slow=ans;
            for (int i=0;i<n;i++){        //make a difference of n so that fast is always n node far from slow.
-            fast=fast->next;
                fast=fast->next;
            }
 
