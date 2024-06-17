@@ -18,7 +18,7 @@ int lengthOfLongestSubstring(string s) {
         while(j<s.size()){
             m[s[j]]++;   
             while(m.size()<j+1-i && i<s.size()){   //✅while(invalid keep deleting leftmost element)        //For Longest substring with k unique char i,e chars can repeat: while(m.size()>k) :while(unique char>k)
-                    m[s[i]]--;
+                    m[s[i]]--;                                                                               //https://www.geeksforgeeks.org/find-the-longest-substring-with-k-unique-characters-in-a-given-string/
                     if(m[s[i]]==0)m.erase(s[i]);
                     i++;
             }
